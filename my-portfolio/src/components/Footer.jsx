@@ -18,7 +18,7 @@ function Footer() {
             Minh Trí<span className="text-accent">.</span>
           </p>
           <p className="mt-1 text-xs text-text-muted">
-            Frontend & WordPress Developer
+            Front-End & JavaScript Developer
           </p>
         </div>
 

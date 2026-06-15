@@ -142,3 +142,42 @@ h1, h2, h3, h4, h5, h6 {
   --color-border: rgba(255, 255, 255, 0.12);
   --color-border-strong: rgba(255, 255, 255, 0.24);
 }
+
+/* ──────────────────────────────────────
+   Background Float Keyframes
+   ────────────────────────────────────── */
+@keyframes floatSlow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(80px, 50px) scale(1.08);
+  }
+  100% {
+    transform: translate(-30px, 100px) scale(0.96);
+  }
+}
+
+@keyframes floatMedium {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(-90px, 70px) scale(1.12);
+  }
+  100% {
+    transform: translate(40px, -50px) scale(0.92);
+  }
+}
+
+@keyframes floatCenter {
+  0% {
+    transform: translate(0px, 0px) scale(0.95);
+  }
+  50% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+  100% {
+    transform: translate(-45px, 45px) scale(0.98);
+  }
+}

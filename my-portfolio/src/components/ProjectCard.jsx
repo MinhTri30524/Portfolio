@@ -7,12 +7,12 @@ function ProjectCard({ title, type, description, tech, role, liveUrl, githubUrl,
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
       viewport={{ once: true, amount: 0.15 }}
-      whileHover={{ y: -6 }}
-      className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 transition-colors duration-300 hover:border-accent/30 md:p-8"
+      whileHover={{ y: -10 }}
+      className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_12px_30px_-10px_rgba(194,164,255,0.12)] md:p-8"
     >
       {/* Type badge */}
       <span className="mb-4 inline-flex w-fit rounded-full border border-accent/20 bg-accent-dim px-3 py-1 text-xs font-medium text-accent">

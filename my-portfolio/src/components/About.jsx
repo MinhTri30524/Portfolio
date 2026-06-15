@@ -12,12 +12,12 @@ const highlights = [
   {
     icon: HiOutlineCode,
     title: "What I Do",
-    text: "I build web interfaces with React and Tailwind, customize WordPress websites for clients, and develop personal full-stack projects.",
+    text: "I focus on building responsive web interfaces using JavaScript, React, HTML, CSS, and Tailwind CSS. I also customize WordPress websites for client projects as a supporting service.",
   },
   {
     icon: HiOutlineGlobe,
     title: "My Approach",
-    text: "I focus on clean code, thoughtful UI, and delivering websites that are responsive, accessible, and pleasant to use.",
+    text: "I enjoy creating clean, accessible user interfaces with smooth transitions, responsive layouts, and modern front-end engineering practices.",
   },
 ];
 

@@ -4,13 +4,18 @@ import Button from "./Button";
 const container = {
   hidden: {},
   show: {
-    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+    transition: { staggerChildren: 0.15, delayChildren: 0.15 },
   },
 };
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 28 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
+  hidden: { opacity: 0, y: 45, scale: 0.98 },
+  show: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1,
+    transition: { duration: 0.85, ease: [0.16, 1, 0.3, 1] } 
+  },
 };
 
 function Hero() {
@@ -43,17 +48,16 @@ function Hero() {
           variants={fadeUp}
           className="font-heading text-4xl font-bold leading-[1.1] text-white sm:text-5xl md:text-6xl lg:text-7xl"
         >
-          Frontend &amp;{" "}
-          <span className="text-accent">WordPress</span>{" "}
+          Front-End &amp;{" "}
+          <span className="text-accent">JavaScript</span>{" "}
           Developer.
         </motion.h1>
 
         <motion.p
           variants={fadeUp}
-          className="mt-6 max-w-xl text-base leading-relaxed text-text-secondary md:text-lg"
+          className="mt-6 max-w-2xl text-base leading-relaxed text-text-secondary md:text-lg"
         >
-          I build clean, responsive, and user-friendly websites using React,
-          WordPress, and modern web technologies.
+          I build responsive, interactive, and user-friendly web interfaces using JavaScript, React, and modern front-end tools. I also have experience customizing WordPress websites for client projects.
         </motion.p>
 
         <motion.div
