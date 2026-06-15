@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────
+   Design Tokens (CSS Custom Properties)
+   ────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-base: #000000;
+  --bg-muted: #050405;
+  --bg-card: #0b0b0f;
+  --bg-elevated: #111118;
+
+  /* Text */
+  --text-primary: #eae5ec;
+  --text-secondary: #adacac;
+  --text-muted: #777777;
+
+  /* Accent */
+  --accent: #c2a4ff;
+  --accent-hover: #d4bdff;
+  --accent-dim: rgba(194, 164, 255, 0.08);
+  --accent-glow: rgba(194, 164, 255, 0.15);
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.24);
+
+  /* Typography */
+  --font-heading: "Clash Display", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-section: 7rem;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+/* ──────────────────────────────────────
+   Base Resets & Globals
+   ────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+/* ──────────────────────────────────────
+   Typography
+   ────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+/* ──────────────────────────────────────
+   Focus Visible (Global)
+   ────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ──────────────────────────────────────
+   Selection
+   ────────────────────────────────────── */
+::selection {
+  background: rgba(194, 164, 255, 0.3);
+  color: #fff;
+}
+
+/* ──────────────────────────────────────
+   Scrollbar (subtle)
+   ────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+/* ──────────────────────────────────────
+   Tailwind v4 Theme Extensions
+   ────────────────────────────────────── */
+@theme {
+  --font-heading: "Clash Display", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --color-bg-base: #000000;
+  --color-bg-muted: #050405;
+  --color-bg-card: #0b0b0f;
+  --color-bg-elevated: #111118;
+
+  --color-text-primary: #eae5ec;
+  --color-text-secondary: #adacac;
+  --color-text-muted: #777777;
+
+  --color-accent: #c2a4ff;
+  --color-accent-hover: #d4bdff;
+  --color-accent-dim: rgba(194, 164, 255, 0.08);
+  --color-accent-glow: rgba(194, 164, 255, 0.15);
+
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-border-strong: rgba(255, 255, 255, 0.24);
+}
